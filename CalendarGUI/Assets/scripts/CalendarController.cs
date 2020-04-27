@@ -114,7 +114,7 @@ public class CalendarController : MonoBehaviour
     {
         _calendarPanel.SetActive(true);
         _target = target;
-        _calendarPanel.transform.position = new Vector3(965, 475, 0);//Input.mousePosition-new Vector3(0,120,0);
+        _calendarPanel.transform.position = new Vector3(700, 343, 0);//Input.mousePosition-new Vector3(0,120,0);
     }
 
     Text _target;
