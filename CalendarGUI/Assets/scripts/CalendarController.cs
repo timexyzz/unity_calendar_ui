@@ -114,13 +114,13 @@ public class CalendarController : MonoBehaviour
     {
         _calendarPanel.SetActive(true);
         _target = target;
-        _calendarPanel.transform.position = new Vector3(700, 343, 0);//Input.mousePosition-new Vector3(0,120,0);
+        _calendarPanel.transform.position = new Vector3(710, 343, 0);//Input.mousePosition-new Vector3(0,120,0);
     }
 
     Text _target;
     public void OnDateItemClick(string day)
     {
-        _target.text = _monthNumText.text + "Month" + day + "Day" + _yearNumText.text + "Year"; //USA 표기법으로 
+        _target.text = _yearNumText.text + "년" + _monthNumText.text + "월" + day + "일" + "입니다.";
         _calendarPanel.SetActive(false);
     }
 }
