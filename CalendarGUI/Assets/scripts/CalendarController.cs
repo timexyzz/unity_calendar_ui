@@ -120,7 +120,7 @@ public class CalendarController : MonoBehaviour
     Text _target;
     public void OnDateItemClick(string day)
     {
-        _target.text = _yearNumText.text + "년" + _monthNumText.text + "월" + day + "일" + "입니다.";
+        _target.text = _yearNumText.text + "년" + _monthNumText.text + "월" + day + "일" + "대한민국 날짜 표기법입니다.\n" + _monthNumText.text + "월" + day + "일" + _yearNumText.text + "년" + "미국 날짜 표기법입니다.\n" + day + "일" + _monthNumText.text + "월" + _yearNumText.text + "월" + "영국 날짜 표기법입니다.";
         _calendarPanel.SetActive(false);
     }
 }
